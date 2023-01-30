@@ -1,0 +1,85 @@
+#whole_wrap {
+  width: 800px;
+  height: 600px;
+  background: #d0edf7;
+  margin: 0 auto;
+  margin-top: 40px;
+  border: 1px solid #444;
+}
+
+#chat_wrap {
+  width: 780px;
+  height: 580px;
+  background: #fff;
+  margin: 0 10px;
+  margin-top: 10px;
+}
+
+#chat_wrap h1 {
+  width: 100%;
+  text-align: center;
+  color: #444;
+  font-size: 2rem;
+  border-bottom: 1px solid #444;
+  margin: 0;
+  padding: 20px 0;
+}
+
+#chat {
+  width: 100%;
+  height: 80%;
+}
+
+#content {
+  width: 75%;
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+  border-right: 1px solid #444;
+}
+
+#content .chat_content {}
+
+#user_list {
+  width: 25%;
+  height: 100%;
+  float: right;
+  text-align: center;
+}
+
+#user_list p {
+  background: #555;
+  margin: 0;
+  padding: 5px 0;
+  color: #fff;
+}
+
+#user_list #allUserList {
+  width: 100%;
+  line-height: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+#user_list #allUserList .users {}
+
+#join {
+  border-top: 1px solid #444;
+  text-align: center;
+}
+
+#join input#myname {
+  font-size: 18px;
+  width: 120px;
+}
+
+#join input#txtMessage {
+  font-size: 18px;
+  width: 75%;
+}
+
+#join button {
+  font-size: 18px;
+  background: #444;
+  color: #fff;
+}

@@ -1,0 +1,124 @@
+<!-- 실제 개발은 apache 웹 서버 이용 -->
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- jquery cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- css style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Client</title>
+  </head>
+  <body>
+    <div id="whole_wrap">
+      <div id="chat_wrap">
+        <h1>Simple Chat</h1>
+        <div id="chat">
+          <div id="content"></div>
+          <div id="user_list">
+            <p>사용자 목록</p>
+            <div id="allUserList"></div>
+          </div>
+        </div>
+        <div id="join">
+          <input type="text" id="myname" placeholder="접속자명 입력" />
+          <button onclick="connect();">접속하기</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    let MY_USER_ID = null; // 고유 값 ( ip와 같다. )
+    let MY_USER_MYNAME = null;
+    let websocket = null;
+
+    const connect = () => {
+      if (!$.trim($("#myname").val())) {
+        alert("접속자명 입력해주세요");
+        $("#myname").focus();
+        return false;
+      }
+
+      let my_user_name = $.trim($("#myname").val());
+
+      // 웹 소켓에 연결
+      websocket = new WebSocket("ws://localhost:8008");
+
+      websocket.onmessage = (event) => {
+        // 서버로 message 올 때, 실행
+        let message = JSON.parse(event.data);
+
+        switch (message.code) {
+          case "my_user_id": {
+            MY_USER_ID = message.msg;
+            sendMyName(my_user_name);
+            break;
+          }
+
+          case "all_users": {
+            let ALL_WS = JSON.parse(message.msg);
+
+            $("#allUserList").html("");
+            ALL_WS.forEach((element, index) => {
+              $("#allUserList").append(`
+                <div class="users">${element.user_name}</div>
+              `);
+            });
+            break;
+          }
+          case "chat_message": {
+            $("#content").append(`
+              <div class="chat_content">
+                ${message.sender_name} : ${message.msg}
+                </div>
+            `);
+            break;
+          }
+        }
+      };
+
+      function sendMyName(name) {
+        MY_USER_MYNAME = name;
+        let data = {
+          code: "new_user",
+          name: name,
+          user_id: MY_USER_ID,
+        };
+
+        websocket.send(JSON.stringify(data));
+
+        $("#join").html(`
+          <input type="text" id="txtMessage" value="" placeholder="보낼 메세지를 입력하세요.">
+      <button onclick="sendMessage();">보내기</button>
+        `);
+      }
+    };
+
+    function sendMessage() {
+      if (!$.trim($("#txtMessage").val())) {
+        alert("보낼 메세지를 입력해주세요.");
+        $("#txtMessage").focus();
+        return false;
+      }
+
+      let message = $.trim($("#txtMessage").val());
+
+      let data = {
+        code: "send_message",
+        name: MY_USER_MYNAME,
+        user_id: MY_USER_ID,
+        msg: message,
+      };
+
+      websocket.send(JSON.stringify(data));
+    }
+  </script>
+</html>

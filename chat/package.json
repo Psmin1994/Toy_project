@@ -1,0 +1,28 @@
+{
+  "name": "nodejs_chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "startdev": "nodemon --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Psmin94/nodejs-chat.git"
+  },
+  "keywords": [],
+  "author": "Psmin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Psmin94/nodejs-chat/issues"
+  },
+  "homepage": "https://github.com/Psmin94/nodejs-chat#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "ws": "^8.12.0"
+  },
+  "type": "module"
+}
