@@ -1,6 +1,3 @@
-## Management System
-React 토이 프로젝트로 고객 관리 시스템을 만들어보자.
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
