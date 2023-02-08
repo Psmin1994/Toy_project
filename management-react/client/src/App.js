@@ -6,6 +6,7 @@ import TableHead from '@mui/material/TableHead';
 import TableBody from '@mui/material/TableBody';
 import TableRow from '@mui/material/TableRow';
 import TableCell from '@mui/material/TableCell';
+import CircularProgress from '@mui/material/CircularProgress';
 import {makeStyles} from '@mui/styles';
 import {useEffect, useState} from 'react';
 
@@ -18,13 +19,22 @@ const styles = makeStyles({
   table: {
     minWidth: 1080,
   },
+  progress: {
+    margin: '16px',
+  },
 });
 
 // JSX 문법
 const App = () => {
   const [data, setData] = useState([]);
+  const [progress, setProgress] = useState(0);
+
+  const progressFunc = () => {
+    setProgress((prevProgress) => (prevProgress >= 100 ? 0 : prevProgress + 10));
+  };
 
   useEffect(() => {
+    const timer = setInterval(progressFunc, 200);
     fetch('/api/customers')
       .then((res) => {
         return res.json();
@@ -33,6 +43,10 @@ const App = () => {
         console.log(data);
         setData(data);
       });
+
+    return () => {
+      clearInterval(timer);
+    };
   }, []);
 
   const classes = styles();
@@ -51,19 +65,27 @@ const App = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {data.map((element) => {
-              return (
-                <Customer
-                  key={element.id}
-                  id={element.id}
-                  img={element.img}
-                  name={element.name}
-                  birthday={element.birthday}
-                  gender={element.gender}
-                  job={element.job}
-                />
-              );
-            })}
+            {data.length ? (
+              data.map((element) => {
+                return (
+                  <Customer
+                    key={element.id}
+                    id={element.id}
+                    img={element.img}
+                    name={element.name}
+                    birthday={element.birthday}
+                    gender={element.gender}
+                    job={element.job}
+                  />
+                );
+              })
+            ) : (
+              <TableRow>
+                <TableCell colSpan={6} align="center">
+                  <CircularProgress className={classes.progress} variant="determinate" value={progress} />
+                </TableCell>
+              </TableRow>
+            )}
           </TableBody>
         </Table>
       </Paper>
