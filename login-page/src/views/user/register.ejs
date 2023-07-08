@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="/css/user/register.css" />
+
+    <title>회원가입 페이지</title>
+  </head>
+  <body>
+    <div class="register-page">
+      <div class="form">
+        <form class="register-form">
+          <input id="nickName" type="text" placeholder="닉네임" />
+          <input id="id" type="text" placeholder="아이디" />
+          <input id="password" type="password" placeholder="비밀번호" />
+          <input id="confirm-password" type="password" placeholder="비밀번호 확인" />
+          <p id="button">SIGN UP</p>
+          <p class="message">Already registered? <a href="/user/login">Sign In</a></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- script 삽입 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.5/axios.min.js"
+      integrity="sha512-nnNHpffPSgINrsR8ZAIgFUIMexORL5tPwsfktOTxVYSv+AUAILuFYWES8IHl+hhIhpFGlKvWFiz9ZEusrPcSBQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="/js/user/register.js" type="module"></script>
+  </body>
+</html>
+<!-- Copyright (c) 2022 by Aigars Silkalns (https://codepen.io/colorlib/pen/rxddKy) -->

@@ -1,0 +1,98 @@
+2023-05-15 15:05:25 [Project-01] info : GET /user/login 200 181.206 ms - 1368
+
+2023-05-15 15:05:97 [Project-01] info : GET /user/login 200 18.288 ms - 1368
+
+2023-05-15 15:05:51 [Project-01] info : POST /user/login 200 531.777 ms - 16
+
+2023-05-15 15:05:97 [Project-01] info : GET /user/login 200 492.218 ms - 1132
+
+2023-05-15 15:05:43 [Project-01] info : GET /user/login 304 429.345 ms - -
+
+2023-05-15 15:05:98 [Project-01] info : GET /user/logout 302 380.836 ms - 66
+
+2023-05-15 15:05:06 [Project-01] info : GET /user/login 200 44.999 ms - 1368
+
+2023-05-15 15:05:86 [Project-01] info : GET /user/login 304 4.028 ms - -
+
+2023-05-15 15:05:02 [Project-01] info : GET /user/login 200 73.771 ms - 1368
+
+2023-05-15 15:05:95 [Project-01] info : GET /user/login 200 7.904 ms - 1368
+
+2023-05-15 15:05:85 [Project-01] info : POST /user/login 200 308.030 ms - 16
+
+2023-05-15 15:05:00 [Project-01] info : GET /user/login 200 74.661 ms - 1132
+
+2023-05-15 15:05:64 [Project-01] info : GET /user/login 304 39.603 ms - -
+
+2023-05-15 15:05:46 [Project-01] info : GET /user/logout 302 74.728 ms - 66
+
+2023-05-15 15:05:58 [Project-01] info : GET /user/login 200 82.074 ms - 1368
+
+2023-05-15 15:05:59 [Project-01] info : GET /user/login 304 10.119 ms - -
+
+2023-05-15 15:05:35 [Project-01] info : POST /user/login 200 427.635 ms - 16
+
+2023-05-15 15:05:45 [Project-01] info : GET /user/login 200 53.073 ms - 1132
+
+2023-05-15 15:05:20 [Project-01] info : GET /user/login 304 35.284 ms - -
+
+2023-05-15 15:05:74 [Project-01] info : GET /user/login 200 32.474 ms - 1132
+
+2023-05-15 15:05:41 [Project-01] info : GET /user/login 200 38.894 ms - 1132
+
+2023-05-15 15:05:64 [Project-01] info : GET /user/logout 302 34.513 ms - 66
+
+2023-05-15 15:05:67 [Project-01] info : GET /user/login 200 3.326 ms - 1368
+
+2023-05-15 15:05:29 [Project-01] info : GET /user/login 304 4.247 ms - -
+
+2023-05-15 15:05:68 [Project-01] info : GET /user/login 200 34.326 ms - 1368
+
+2023-05-15 15:05:27 [Project-01] info : GET /user/login 200 6.964 ms - 1368
+
+2023-05-15 15:05:16 [Project-01] info : POST /user/login 200 309.326 ms - 16
+
+2023-05-15 15:05:28 [Project-01] info : GET /user/login 200 47.195 ms - 1132
+
+2023-05-15 15:05:86 [Project-01] info : GET /user/login 304 39.071 ms - -
+
+2023-05-15 15:05:85 [Project-01] info : GET /user/logout 302 43.464 ms - 66
+
+2023-05-15 15:05:87 [Project-01] info : GET /user/login 200 7.815 ms - 1368
+
+2023-05-15 15:05:63 [Project-01] info : GET /user/login 304 2.203 ms - -
+
+2023-05-15 15:05:41 [Project-01] info : POST /user/login 200 219.548 ms - 16
+
+2023-05-15 15:05:48 [Project-01] info : GET /user/login 200 40.435 ms - 1132
+
+2023-05-15 15:05:99 [Project-01] info : GET /user/login 304 32.534 ms - -
+
+2023-05-15 17:05:83 [Project-01] info : GET /user/login 200 26.019 ms - 1368
+
+2023-05-15 17:05:32 [Project-01] info : GET /user/login 200 7.242 ms - 1368
+
+2023-05-15 17:05:19 [Project-01] info : GET /user/login 304 2.951 ms - -
+
+2023-05-15 17:05:51 [Project-01] info : GET /user/login 304 3.162 ms - -
+
+2023-05-15 17:05:39 [Project-01] info : GET /user/register 200 10.384 ms - 1499
+
+2023-05-15 17:05:80 [Project-01] info : GET /user/register 304 4.777 ms - -
+
+2023-05-15 17:05:18 [Project-01] info : GET /user/login 304 2.834 ms - -
+
+2023-05-15 17:05:67 [Project-01] info : GET /user/login 304 3.029 ms - -
+
+2023-05-15 17:05:28 [Project-01] info : GET /user/register 304 26.033 ms - -
+
+2023-05-15 17:05:75 [Project-01] info : GET /user/register 304 5.144 ms - -
+
+2023-05-15 17:05:05 [Project-01] info : GET /user/login 304 2.490 ms - -
+
+2023-05-15 17:05:37 [Project-01] info : GET /user/login 304 3.840 ms - -
+
+2023-05-15 17:05:65 [Project-01] info : GET /user/register 304 1.795 ms - -
+
+2023-05-15 17:05:99 [Project-01] info : GET /user/register 304 1.976 ms - -
+

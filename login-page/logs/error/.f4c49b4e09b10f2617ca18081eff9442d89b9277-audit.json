@@ -1,0 +1,80 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 14
+    },
+    "auditLog": "C:\\workspace\\project\\Project_01\\logs\\error\\.f4c49b4e09b10f2617ca18081eff9442d89b9277-audit.json",
+    "files": [
+        {
+            "date": 1683179256987,
+            "name": "C:\\workspace\\project\\Project_01\\logs\\error\\2023-05-04.error.log",
+            "hash": "3c78614763bbd0947ab150c74d20f9c0767bb9a9fe0f8677898e6b3a14819503"
+        },
+        {
+            "date": 1683403230914,
+            "name": "C:\\workspace\\project\\Project_01\\logs\\error\\2023-05-07.error.log",
+            "hash": "6ad33e67cfcca633a11b62ebc6e8c662023f96c9fe50120e4f8e2a0fcba0411d"
+        },
+        {
+            "date": 1683606660766,
+            "name": "C:\\workspace\\project\\Project_01\\logs\\error\\2023-05-09.error.log",
+            "hash": "7f08a6ace6aa927ab5cfbe32d8e6ce1ea3308272e600a26719a755e2359c475b"
+        },
+        {
+            "date": 1683682429748,
+            "name": "C:\\workspace\\project\\Project_01\\logs\\error\\2023-05-10.error.log",
+            "hash": "ba6e0f4849c3a716a44fb8c70633ce4653f2e408ee54a3c486c6ae7c2206bb90"
+        },
+        {
+            "date": 1683766743095,
+            "name": "C:\\workspace\\project\\Project_01\\logs\\error\\2023-05-11.error.log",
+            "hash": "92791027915b0ce5d331c4d85b93f9e7acb6774b05ebaaed8abe3fc219a9d0d6"
+        },
+        {
+            "date": 1684132196980,
+            "name": "C:\\workspace\\project\\Project_01\\logs\\error\\2023-05-15.error.log",
+            "hash": "9668c622efc472b0b6f9b1e7f5ac1e58a341d3910c7ac0134ef9c47b6623567d"
+        },
+        {
+            "date": 1684197623191,
+            "name": "C:\\workspace\\project\\Project_01\\logs\\error\\2023-05-16.error.log",
+            "hash": "501bea69d8239985113188f8391fbb579ec585cb8f03bf34ea8760d2760b3f55"
+        },
+        {
+            "date": 1684747420073,
+            "name": "C:\\workspace\\project\\Project_01\\logs\\error\\2023-05-22.error.log",
+            "hash": "8d3e6a2ae473fcabebb396a532a4b1e9b9410b14e80ae386681b9bba71b65ddf"
+        },
+        {
+            "date": 1684767604615,
+            "name": "C:\\workspace\\project\\Project_01\\logs\\error\\2023-05-23.error.log",
+            "hash": "d5c92b746b6b886d711f4f0a5e3cdf5721353289027ec0e9d45e2513d18e9a3b"
+        },
+        {
+            "date": 1684906427519,
+            "name": "C:\\workspace\\project\\Project_01\\logs\\error\\2023-05-24.error.log",
+            "hash": "da5870842ceacdd4f65e0741017f57a3d288ba5d587e5a2b87a0ea7c6a8f29af"
+        },
+        {
+            "date": 1685274009211,
+            "name": "C:\\workspace\\project\\Project_01\\logs\\error\\2023-05-28.error.log",
+            "hash": "6685aa2f16dc2aba20e9942067782586c71149d38bcae4f569a54a5e0d464855"
+        },
+        {
+            "date": 1685365539289,
+            "name": "C:\\workspace\\project\\Project_01\\logs\\error\\2023-05-29.error.log",
+            "hash": "3503860c263862a2db3bf7fa8e392bba72508be896cfedfade1fbe472221670f"
+        },
+        {
+            "date": 1685457598062,
+            "name": "C:\\workspace\\project\\Project_01\\logs\\error\\2023-05-30.error.log",
+            "hash": "ed2e82fb2173a65ff7eb86a8a6fb0432cfc91026a452cff2555ecdcc34860d9a"
+        },
+        {
+            "date": 1685871383223,
+            "name": "C:\\workspace\\project\\Project_01\\logs\\error\\2023-06-04.error.log",
+            "hash": "f289a032aad7c18fca2435e7131cdcee41dc849cdc6ea7865e0c4993538e6464"
+        }
+    ],
+    "hashType": "sha256"
+}
