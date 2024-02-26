@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+/* 스킵 네비게이션 */
+#skip {
+  position: relative;
+  text-align: center;
+}
+#skip a {
+  position: absolute;
+  left: 0;
+  top: -35px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: #333;
+  line-height: 30px;
+  width: 140px;
+}
+#skip a:active,
+#skip a:focus {
+  top: 0;
+}
+
+/* 레이아웃 */
+#wrap {
+  width: 100%;
+  background: #000;
+}
+#header {
+  width: 100%;
+  height: 100px;
+}
+#contents {
+  width: 100%;
+  height: 800px;
+}
+#footer {
+  width: 100%;
+  height: 200px;
+}
+
+/* 컨텐츠 레리아웃 */
+#cont_cont {
+  width: 100%;
+  height: 900px;
+}
+
+/* 컨테이너 */
+.container {
+  width: 1320px;
+  margin: 0 auto;
+  height: inherit;
+  /* background: rgba(255, 255, 255, 0.3); */
+}
+
+/* header_tit */
+.header {
+  padding-top: 30px;
+}
+.header .header_tit {
+  float: left;
+  display: inline-block;
+  text-align: center;
+  width: 408px;
+}
+
+/* header_nav */
+.header .header_nav ul {
+  float: left;
+  margin: 5px 132px;
+  display: inline-block;
+}
+.header .header_nav ul li {
+  text-align: center;
+  width: 84px;
+  float: left;
+  padding-right: 24px;
+  font-size: 20px;
+}
+.header .header_nav ul li:last-child {
+  padding-right: 0;
+}
+.header .header_nav ul li a.selected {
+  color: #390;
+}
+
+/* header_search */
+.header .header_search {
+  display: inline-block;
+  width: 300px;
+  height: 40px;
+  position: relative;
+}
+.header .header_search input.search {
+  width: 280px;
+  height: 40px;
+  font-style: 20px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background: rgba(117, 111, 111, 0.3);
+  outline: 0;
+  padding-left: 20px;
+}
+.header .header_search input.btn_summit {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* cont_ban */
+.cont_categories {
+  padding: 20px 0;
+}
+.cont_categories ul {
+  height: 30px;
+}
+.cont_categories ul li {
+  padding: 0 10px;
+  text-align: center;
+  margin-right: 24px;
+  float: left;
+  border-radius: 15px;
+  height: 30px;
+  background: rgba(217, 217, 217, 0.4);
+}
+.cont_categories ul li a {
+  color: #ffa800;
+  display: block;
+  padding: 5px 10px;
+}
+
+/* cont_cont */
+.item_list ul li {
+  position: relative;
+  width: 192px;
+  float: left;
+  margin-right: 24px;
+  text-align: center;
+}
+.item_list ul li:last-child {
+  margin-right: 0;
+}
+.item_list ul li a span {
+  display: block;
+  width: 192px;
+}
+.item_list ul li a span img {
+}
+.item_list ul li a span em {
+  visibility: hidden;
+  width: 100%;
+  height: 290px;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  position: absolute;
+  line-height: 290px;
+}
+.item_list ul li a strong {
+  display: inline-block;
+  margin: 5px 0 20px 0;
+}
+
+/* footer */
+.footer {
+  border-top: 1px solid #fff;
+  padding-top: 20px;
+}
+.footer .contact {
+  text-align: center;
+}
+.footer .contact ul {
+  display: inline-block;
+  height: 30px;
+}
+.footer .contact ul li {
+  border-right: 1px solid #fff;
+  padding-right: 20px;
+  margin-right: 20px;
+  float: left;
+}
+.footer .contact ul li:last-child {
+  border: 0;
+  margin-right: 0;
+  padding-right: 0;
+}
+.footer .contact ul li img {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.footer .contact ul li em {
+  vertical-align: middle;
+  font-size: 14px;
+}

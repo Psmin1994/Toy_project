@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" type="text/css" href="/public/css/test.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-content">
+      <%- include('particals/test-header') -%>
+      <p>미세먼지 정보를 얻으려면 측정장소를 입력해주세요</p>
+      <form action="/air/post" method="post">
+        <input placeholder="측정장소" name="location" type="text" />
+        <button>Search</button>
+      </form>
+      <%- include('particals/test-footer') -%>
+    </div>
+  </body>
+</html>

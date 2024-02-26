@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Open API -->
+    <script
+      type="text/javascript"
+      src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=sd44fsac8x&submodules=geocoder"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" type="text/css" href="/public/css/pharmacy/home.css" />
+
+    <title>1</title>
+  </head>
+  <body>
+    <div class="main-content">
+      <%- include('particals/test-header') -%>
+      <h1>약국 지도</h1>
+      <div id="map"></div>
+      <%- include('particals/test-footer') -%>
+    </div>
+  </body>
+  <script src="/public/js/pharmacy.js"></script>
+</html>
