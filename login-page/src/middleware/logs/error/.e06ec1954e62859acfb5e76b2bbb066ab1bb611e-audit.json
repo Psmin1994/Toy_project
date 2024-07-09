@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 14
+    },
+    "auditLog": "C:\\workspace\\project\\Toy_project\\login-page\\src\\middleware\\logs\\error\\.e06ec1954e62859acfb5e76b2bbb066ab1bb611e-audit.json",
+    "files": [
+        {
+            "date": 1715036295258,
+            "name": "C:\\workspace\\project\\Toy_project\\login-page\\src\\middleware\\logs\\error\\2024-05-07.error.log",
+            "hash": "9d79a5c87f5ecb77cff1bf6a935c5ce2ff37fb2f00e3bf70386a7f56681b5b1d"
+        }
+    ],
+    "hashType": "sha256"
+}

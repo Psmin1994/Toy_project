@@ -1,28 +1,25 @@
 import winston from "winston";
 import winstonDaily from "winston-daily-rotate-file";
-import dotenv from "dotenv";
-import path from "path";
+import "dotenv/config";
+let dirname = import.meta.dirname;
 
-dotenv.config();
-
-const __dirname = path.resolve();
-
+// winston.format에서 프로퍼티 가져오기
 const { combine, timestamp, label, simple, colorize, printf } = winston.format;
 
-// 로그 파일 저장 경로
-const logDir = `${__dirname}/logs`;
+// 로그 파일 저장 경로 지정
+const logDir = `${dirname}/logs`;
 
 // 로그 출력 포맷 정의 함수
 const logFormat = printf((info) => {
   return `${info.timestamp} [${info.label}] ${info.level} : ${info.message}`;
-  // 날짜 [라벨] 레벨 메세지
+  // 날짜 [라벨] 레벨 : 메세지
 });
 
 const logger = winston.createLogger({
   //* 로그 출력 형식 정의
   format: combine(
     timestamp({ format: "YYYY-MM-DD HH:MM:SS" }),
-    label({ label: "Project-01" }), // 어플리케이션 이름
+    label({ label: "Movie-Story" }), // 어플리케이션 이름
     logFormat // log 출력 포맷
     // format: combine() 에서 정의한 timestamp와 label 형식값이 logFormat에 들어가서 정의. level이나 message는 콘솔에서 자동 정의
   ),
@@ -35,7 +32,7 @@ const logger = winston.createLogger({
       level: "info", // info 레벨
       datePattern: "YYYY-MM-DD", // 파일 날짜 형식
       dirname: logDir, // 파일 경로
-      filename: `%DATE%.log`, // 파일 이름
+      filename: `%DATE%.info.log`, // 파일 이름
       maxFiles: 14, // 최근 14일치 저장
       zippedArchive: true, // gzip으로 압축할지 여부
     }),
